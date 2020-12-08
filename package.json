@@ -1,16 +1,14 @@
 {
   "name": "brain-games-sizemov",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
-   },
-   "files": [
-
+  },
+  "files": [
     "dist"
-
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,6 +21,7 @@
     "@babel/cli": "^7.12.8",
     "@babel/core": "^7.12.9",
     "@babel/node": "^7.12.6",
-    "@babel/preset-env": "^7.12.7"
+    "@babel/preset-env": "^7.12.7",
+    "readline-sync": "^1.4.10"
   }
 }

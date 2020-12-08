@@ -1,3 +1,5 @@
 #!/usr/bin/env node
+"use strict";
 
-console.log('Welcome to the Brain Games!');
+import printName from '../index.js';
+console.log('Hello,' + printName + '!');
