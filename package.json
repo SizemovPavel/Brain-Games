@@ -1,7 +1,7 @@
 {
   "name": "brain-games-sizemov-pavel",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "my first project",
   "main": "index.js",
   "bin": {
