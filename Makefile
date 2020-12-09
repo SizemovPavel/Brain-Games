@@ -11,7 +11,7 @@ build:
 	npm run build
 
 lint:
-	npx eslint
+	npx eslint .
 
 fix:
-	npx eslint --fix
+	npx eslint . --fix

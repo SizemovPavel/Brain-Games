@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-import printName from '..';
+import userName from '..';
+
+userName();
