@@ -1,6 +1,4 @@
-#!/usr/bin/env node
+#!/src/bin/env node
+import run from '../games/game-even';
 
-import { userName, brainEven } from '..';
-
-userName();
-brainEven();
+run();

@@ -18,3 +18,6 @@ fix:
 
 brain-even:
 	npx babel-node src/bin/brain-even.js
+
+brain-calc:
+	npx babel-node src/bin/brain-calc.js
