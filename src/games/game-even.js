@@ -1,4 +1,4 @@
-import runGame from '..';
+import runGame from '../engine';
 import getRandomInt from '../utilities';
 
 const rules = () => 'Answer"yes" if number even oterwise answer "no"';

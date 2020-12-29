@@ -1,4 +1,4 @@
-import runGame from '..';
+import runGame from '../engine';
 import getRandomInt from '../utilities';
 
 const rules = () => 'What is the result of the expression?';

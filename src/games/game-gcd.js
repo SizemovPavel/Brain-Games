@@ -1,4 +1,4 @@
-import runGame from '..';
+import runGame from '../engine';
 import getRandomInt from '../utilities';
 
 const rules = () => 'Find the greatest common divisor of given numbers.';

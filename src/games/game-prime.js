@@ -1,11 +1,11 @@
-import runGame from '..';
+import runGame from '../engine';
 import getRandomInt from '../utilities';
 
 const rules = () => 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
 const getQuestionAndAnswer = () => {
   const randomNumber = getRandomInt(1, 100);
-  const prime = () => {
+  const isPrime = () => {
     if (randomNumber <= 1) {
       return 'no';
     } if (randomNumber === 2) {
@@ -21,7 +21,7 @@ const getQuestionAndAnswer = () => {
     return 'yes';
   };
   const question = `${randomNumber}`;
-  const correctAnswer = prime(randomNumber);
+  const correctAnswer = isPrime(randomNumber);
   return [question, correctAnswer];
 };
 export default () => runGame(rules, getQuestionAndAnswer);

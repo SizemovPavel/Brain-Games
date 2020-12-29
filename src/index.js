@@ -1,29 +1,34 @@
 import readlineSync from 'readline-sync';
+import calc from './games/game-calc';
+import even from './games/game-even';
+import gcd from './games/game-gcd';
+import prime from './games/game-prime';
+import progression from './games/game-progression';
 
-const userName = () => {
-  console.log('Welcome to the Brain Games!');
-  return readlineSync.question('May I have your name?');
-};
+const runMenu = () => {
+  console.log('-brain-calc \n-brain-even \n-brain-gcd \n-brain-prime \n-brain-progression');
+  const choisUser = readlineSync.question('What game do you want to play?  ');
 
-const runGame = (rules, getQuestionAndAnswer) => {
-  const printName = userName();
-  console.log(`Hello, ${printName} \n`);
-  console.log(rules());
-  let step = 1;
-  const steps = 3;
-
-  for (step; step <= steps; step += 1) {
-    const [question, correctAnswer] = getQuestionAndAnswer();
-
-    const answerUser = readlineSync.question(`Qustion: ${question} \n Your answer: `);
-
-    if (`${correctAnswer}` === answerUser) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${printName}!`);
-      return;
-    }
+  switch (choisUser) {
+    case 'brain-calc':
+      calc();
+      break;
+    case 'brain-even':
+      even();
+      break;
+    case 'brain-gcd':
+      gcd();
+      break;
+    case 'brain-prime':
+      prime();
+      break;
+    case 'brain-progression':
+      progression();
+      break;
+    default:
+      console.log('What game do you want to play');
+      runMenu();
+      break;
   }
-  console.log(`Congratulation, ${printName}!`);
 };
-export default runGame;
+export default runMenu;
